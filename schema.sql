@@ -1,3 +1,5 @@
+--criacao da tabela de usuarios
+--criacao de funcao para atualizar o horario que alguma informacao da linha da tabela foi alterada
 CREATE TABLE usuario (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
@@ -31,4 +33,3 @@ CREATE TRIGGER update_usuario_updated_at
 BEFORE UPDATE ON usuario  -- Define que o trigger irá atuar antes de um UPDATE
 FOR EACH ROW  -- Define que o trigger será chamado para cada linha afetada
 EXECUTE FUNCTION update_updated_at_column();  -- Chama a função criada
-
