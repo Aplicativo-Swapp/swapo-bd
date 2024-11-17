@@ -6,44 +6,21 @@ Este repositório contém o banco de dados do projeto Swapp, um aplicativo de pe
 
 ### Pré-requisitos
 
-Para acessar o banco de dados, você precisará ter o [Docker](https://www.docker.com/get-started) e o [DBeaver](https://dbeaver.io/) instalados em seu computador.
+Para acessar o banco de dados, você precisará ter o [DBeaver](https://dbeaver.io/) instalados em seu computador.
 
 ### Passo a Passo para Acessar o Banco de Dados
 
-1. **Clone o Repositório**
-
-   Primeiro, você precisa clonar este repositório para sua máquina local. Execute o seguinte comando no terminal:
-
-   ```bash
-   git clone https://github.com/Aplicativo-Swapp/swapp-bd.git
-
-2. **Navegue até o Diretório do Projeto**
-
-   Após clonar o repositório, navegue até o diretório do projeto:
-
-   ```bash
-   cd swapp-bd
-
-
-3. **Inicie o Contêiner Docker**
-
-   Para iniciar o banco de dados, use o seguinte comando no terminal:
-   ```bash
-    docker-compose up
-   ```
-    Isso iniciará o contêiner do PostgreSQL com as configurações especificadas no arquivo docker-compose.yml.
-
-4. **Conecte-se ao Banco de Dados Usando o DBeaver**
+1. **Conecte-se ao Banco de Dados Usando o DBeaver**
 
    - Abra o DBeaver.
    - Crie uma nova conexão:
      - Selecione `PostgreSQL` na lista de tipos de banco de dados.
      - Preencha os campos da seguinte forma:
-       - **Host**: `localhost`
+       - **Host**: `swapp-db.cvm0qsuik7kf.us-east-1.rds.amazonaws.com`
        - **Port**: `5432`
-       - **Database**: `swapp_db`
+       - **Database**: `postgres`
        - **Username**: `swapp_user`
-       - **Password**: `swapp_password`
+       - **Password**: `swappsenha`
    - Clique em `Test Connection` para verificar se a conexão está funcionando e depois em `Finish` para criar a conexão.
 
 5. **Verifique as Tabelas**
@@ -52,8 +29,8 @@ Para acessar o banco de dados, você precisará ter o [Docker](https://www.docke
 
 ### Notas
 
-- O banco de dados foi configurado para permitir que múltiplos usuários tenham acesso, mas somente um usuário (`swapp_user`) tem permissões administrativas.
-- As informações de acesso podem ser alteradas no arquivo `docker-compose.yml` se necessário.
+![image](https://github.com/user-attachments/assets/a34a16bf-8006-4f21-80ef-1d8ce1220085)
+
 
 ---
 
