@@ -37,3 +37,6 @@ Para acessar o banco de dados, você precisará ter o [DBeaver](https://dbeaver.
 
 Para mais informações sobre o projeto Swapp, fique à vontade para consultar a documentação ou entrar em contato com a equipe.
 
+Notas Pessoais:
+Verificar orçamento AWS:
+https://us-east-1.console.aws.amazon.com/billing/home#/budgets/overview
