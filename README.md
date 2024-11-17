@@ -1,6 +1,7 @@
 # Swapp - Banco de Dados
 
 Este repositório contém o banco de dados do projeto Swapp, um aplicativo de permuta que permite aos usuários trocar favores, serviços e habilidades.
+Nosso banco de dados está hospedado na AWS.
 
 ## Acesso ao Banco de Dados
 
